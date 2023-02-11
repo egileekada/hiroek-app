@@ -1,7 +1,6 @@
-import { Handler } from '@netlify/functions'
 import axios from 'axios';
 
-export const handler: Handler = async (event, context) => {
+exports.handler = async (event, context) => {
   const listId = '70320f2646';
   const apiKey = 'c831dbc817ef5c63a9adee0dfa98c669-us18';
   const body = JSON.parse(event.body);
