@@ -18,7 +18,8 @@ exports.handler = async (event, context) => {
       email_address,
       status: 'subscribed',
     }
-    const { data } = await axios.post(`https://us6.api.mailchimp.com/3.0/lists/${listId}/members`, payload, {
+    console.log("payload:: ", payload);
+    const { data } = await axios.post(`https://us18.api.mailchimp.com/3.0/lists/${listId}/members`, payload, {
       headers: {
         Authorization: `Basic ${apiKey}`,
       }
