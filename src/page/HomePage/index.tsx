@@ -42,7 +42,10 @@ export default function HomePage() {
         email_address: email,
       };
 
-      await axios.post("/.netlify/functions/add-priority-access", payload);
+      await axios.post(
+        "/.netlify/functions/priority-access-subscription",
+        payload
+      );
       alert("Contact details added successfully.");
       formik.resetForm();
     } catch (error: any) {
