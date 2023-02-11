@@ -31,7 +31,6 @@ export default function HomePage() {
     values: FormValues,
     formik: FormikHelpers<FormValues>
   ) => {
-    console.log(values);
     const { firstName, lastName, email } = values;
     try {
       const payload = {
