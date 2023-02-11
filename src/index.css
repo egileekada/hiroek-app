@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body { 
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif; 
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.scroll_event::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
