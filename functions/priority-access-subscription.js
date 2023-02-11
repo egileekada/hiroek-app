@@ -29,7 +29,15 @@ exports.handler = async (event, context) => {
       body: JSON.stringify(data),
     }
   } catch (error) {
-    console.log(error);
+    if (error.response) {
+      if (error.response.status === 400) {
+        console.log(error.response);
+      } else {
+        console.log(error)
+      }
+    } else {
+      console.log(error);
+    }
     return {
       statusCode: 500,
       body: JSON.stringify(error),
