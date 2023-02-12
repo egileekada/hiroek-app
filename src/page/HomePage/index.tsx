@@ -52,6 +52,7 @@ export default function HomePage() {
       setLoader(false);
     } catch (error: any) {
       setLoader(false);
+      console.log(error, error.message);
       alert(error.message);
     }
   };
