@@ -37,11 +37,11 @@ export default function HeroSection(props: any) {
           <p className=" text-[#8C43FE] text-3xl font-bold text-center ">
             Why Hiroek?
           </p>
-          <p className=" text-[#00005D] font-medium lg:text-center text-lg mt-2 lg:pb-6 lg:border-b-0 border-b border-[#c7a5fd] ">
+          <p className=" text-[#00005D] font-medium lg:text-center text-lg mt-2 lg:pb-2 pb-6 lg:border-b-0 border-b border-[#c7a5fd] ">
             Hiroek brings you closer to your community and empowers you to
             support the causes you care about.
           </p>
-          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-6">
+          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6">
             A tool for Grassroot Root based Organisations to create and expand
             space to amplify the crucial role they play in advancing social
             wellbeing.
