@@ -32,8 +32,10 @@ exports.handler = async (event, context) => {
     if (error.response) {
       if (error.response.status === 400) {
         return {
-          statusCode: 500,
-          body: error.response.data.detail,
+          statusCode: 400,
+          body: JSON.stringify({
+            message: error.response.data.detail
+          }),
         }
       } else {
         console.log(error)
