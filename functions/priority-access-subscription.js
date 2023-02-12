@@ -31,9 +31,12 @@ exports.handler = async (event, context) => {
   } catch (error) {
     if (error.response) {
       if (error.response.status === 400) {
-        console.log("Error details:::: ", error.response.data.detail);
+        return {
+          statusCode: 500,
+          body: error.response.data.detail,
+        }
       } else {
-        console.log("Vague error information:: ", error)
+        console.log(error)
       }
     } else {
       return {
