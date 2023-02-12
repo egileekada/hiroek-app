@@ -52,11 +52,16 @@ export default function HomePage() {
       setLoader(false);
     } catch (error: any) {
       setLoader(false);
-      console.log("Errorroororo::: ", error, error.message);
       if (error.response) {
-        console.log("Checking HEREREREER::: ", error.response);
+        if (error.response.status === 400) {
+          alert(error.response.data.detail.message)
+        } else {
+          console.log(error.response);
+          alert(error.message);
+        }
+      } else {
+        alert("Request failed. Please check your internet connection and try again.");
       }
-      alert(error.message);
     }
   };
 
