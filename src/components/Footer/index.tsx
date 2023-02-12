@@ -11,9 +11,9 @@ export default function Footer() {
             GET IN TOUCH
           </button>
           <div className=" flex items-center ">
-            <p className=" text-xl my-8 ">info@myhero.io</p>
+            <p className=" text-xl my-8 ">info@hiroek.io</p>
             <a
-              href="mailto:info@myhero.io"
+              href="mailto:info@hiroek.io"
               target="_blank"
               style={{ boxShadow: "0px 3px 6px #0000001A" }}
               className=" w-[40px] -rotate-45 ml-3 h-[40px] relative  flex justify-center items-center bg-[#7B53FF] rounded-full "
