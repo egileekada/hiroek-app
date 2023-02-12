@@ -31,12 +31,15 @@ exports.handler = async (event, context) => {
   } catch (error) {
     if (error.response) {
       if (error.response.status === 400) {
-        console.log(error.response);
+        console.log("Error details:::: ", error.response.data.detail);
       } else {
-        console.log(error)
+        console.log("Vague error information:: ", error)
       }
     } else {
-      console.log(error);
+      return {
+        statusCode: 500,
+        body: 'Request failed. Please check your internet connection and try again.',
+      }
     }
     return {
       statusCode: 500,
