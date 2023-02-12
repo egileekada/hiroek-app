@@ -54,6 +54,7 @@ export default function HomePage() {
       setLoader(false);
       if (error.response) {
         if (error.response.status === 400) {
+          console.log(error.response);
           alert(error.response.data.detail.message)
         } else {
           console.log(error.response);
