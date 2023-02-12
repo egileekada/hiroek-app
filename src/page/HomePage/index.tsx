@@ -52,7 +52,10 @@ export default function HomePage() {
       setLoader(false);
     } catch (error: any) {
       setLoader(false);
-      console.log(error, error.message);
+      console.log("Errorroororo::: ", error, error.message);
+      if (error.response) {
+        console.log("Checking HEREREREER::: ", error.response);
+      }
       alert(error.message);
     }
   };
