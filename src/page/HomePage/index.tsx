@@ -26,6 +26,7 @@ const SignupSchema = Yup.object().shape({
 
 export default function HomePage() {
   const [isShown, setIsShown] = React.useState(false);
+  const [isLoading, setLoader] = React.useState(false);
 
   const submitForm = async (
     values: FormValues,
@@ -41,13 +42,16 @@ export default function HomePage() {
         email_address: email,
       };
 
+      setLoader(true);
       await axios.post(
         "/.netlify/functions/priority-access-subscription",
         payload
       );
       alert("Contact details added successfully.");
       formik.resetForm();
+      setLoader(false);
     } catch (error: any) {
+      setLoader(false);
       alert(error.message);
     }
   };
@@ -213,11 +217,11 @@ export default function HomePage() {
                         </p>
                       </div>
                       <button
-                        disabled={!formik.isValid || !formik.dirty}
+                        disabled={!formik.isValid || !formik.dirty || isLoading}
                         type="submit"
                         className="  w-[90%] font-bold border text-sm outline-none mt-4 text-white bg-[#0B0D39] text-center h-[45px] rounded-[43px] rounded-bl-[12px] "
                       >
-                        Get Access
+                        {isLoading ? "Loading..." : "Get Access"}
                       </button>
                     </div>
                   </div>
