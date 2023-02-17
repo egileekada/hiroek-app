@@ -42,7 +42,7 @@ export default function HeroSection(props: any) {
             support the causes you care about.
           </p>
           <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6">
-            A tool for Grassroot Root based Organisations to create and expand
+            A tool for Grassroot based Organisations to create and expand
             space to amplify the crucial role they play in advancing social
             wellbeing.
           </p>
