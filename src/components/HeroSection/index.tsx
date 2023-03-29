@@ -49,9 +49,9 @@ export default function HeroSection(props: any) {
             space to amplify the crucial role they play in advancing social
             wellbeing.
           </p>
-          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6">
+          {/* <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6">
             An app for positive peer support.
-          </p>
+          </p> */}
         </div>
       </div>
     </>
