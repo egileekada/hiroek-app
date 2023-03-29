@@ -41,7 +41,10 @@ export default function HeroSection(props: any) {
             Hiroek brings you closer to your community and empowers you to
             support the causes you care about.
           </p>
-          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6 lg:pb-2 pb-6 lg:border-b-0 border-b border-[#c7a5fd] ">
+          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6 lg:pb-2 pb-6 lg:border-b-0 border-b border-[#c7a5fd]">
+            An app for positive peer support.
+          </p>
+          <p className="text-[#00005D] font-medium lg:text-center text-lg lg:pt-2 pt-6  ">
             A tool for Grassroot based Organisations to create and expand
             space to amplify the crucial role they play in advancing social
             wellbeing.
