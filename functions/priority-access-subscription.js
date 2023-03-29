@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 exports.handler = async (event, context) => {
-  const listId = '70320f2646';
-  const apiKey = 'c831dbc817ef5c63a9adee0dfa98c669-us18';
+  const listId = process.env.LIST_ID;
+  const apiKey = process.env.API_KEY;
   const body = JSON.parse(event.body);
   const { email_address } = body;
 
