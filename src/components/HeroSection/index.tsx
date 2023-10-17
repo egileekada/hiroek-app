@@ -12,9 +12,7 @@ export default function HeroSection(props: any) {
             <span className=" text-[#8C43FE] ">Empowered</span>.
           </p>
           <p className=" mt-4 ">
-            Hiroek is a community engagement and social empowerment app.
-            Galvanising a new generation who are passionate about community
-            philanthropy and most importantly action.
+          Hiroek is an app that gives you the platform to create and engage with communities and other social causes. Empowering a new generation of philanthropists, supporters, and action-takers. (Uniting thinkers, carers, and doers.)
           </p>
           <button
             onClick={() => props.open(true)}
