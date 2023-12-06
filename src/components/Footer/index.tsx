@@ -34,6 +34,9 @@ export default function Footer() {
             <div className=" w-[50px] h-[50px] rounded-full border border-[#CBACFC] flex justify-center items-center "></div>
             <div className=" w-[50px] h-[50px] rounded-full border border-[#CBACFC] flex justify-center items-center "></div>
           </div>
+          <a href="https://ciof.org.uk/" target="_blank" > 
+            <img src="/assets/imgs/iof_logo.svg" className=" mt-6 " />
+          </a>
         </div>
         <div className=" w-full flex flex-col lg:items-start items-center text-lg ">
           <div className=" flex mb-4 items-center ">
