@@ -68,6 +68,21 @@ export default function Footer() {
                 {/* <FaLinkedinIn /> */}
               </div>
             </a>
+            <a
+              href={"https://www.linkedin.com/company/hiroek/"}
+              target="_blank"
+              rel="noreferrer"
+              className=" w-fit "
+            >
+              <div className=" w-[50px] h-[50px] rounded-full border fill-[#7B53FF] border-[#CBACFC] flex justify-center items-center ">
+                <svg className=" w-7 fill-[#7B53FF]" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="mdi:twitter">
+                    <path id="Vector" d="M112.3 30C108.45 31.75 104.3 32.9 100 33.45C104.4 30.8 107.8 26.6 109.4 21.55C105.25 24.05 100.65 25.8 95.8002 26.8C91.8502 22.5 86.3002 20 80.0002 20C68.2502 20 58.6502 29.6 58.6502 41.45C58.6502 43.15 58.8502 44.8 59.2002 46.35C41.4002 45.45 25.5502 36.9 15.0002 23.95C13.1502 27.1 12.1002 30.8 12.1002 34.7C12.1002 42.15 15.8502 48.75 21.6502 52.5C18.1002 52.5 14.8002 51.5 11.9002 50V50.15C11.9002 60.55 19.3002 69.25 29.1002 71.2C25.9538 72.061 22.6507 72.1808 19.4502 71.55C20.8082 75.8124 23.4679 79.542 27.0553 82.2147C30.6427 84.8873 34.9774 86.3685 39.4502 86.45C31.8683 92.4522 22.4702 95.6966 12.8002 95.65C11.1002 95.65 9.4002 95.55 7.7002 95.35C17.2002 101.45 28.5002 105 40.6002 105C80.0002 105 101.65 72.3 101.65 43.95C101.65 43 101.65 42.1 101.6 41.15C105.8 38.15 109.4 34.35 112.3 30Z" />
+                  </g>
+                </svg>
+                {/* <FaLinkedinIn /> */}
+              </div>
+            </a>
             {/* <div className=" w-[50px] h-[50px] rounded-full border border-[#CBACFC] flex justify-center items-center "></div> */}
           </div>
           <a href="https://ciof.org.uk/" target="_blank" >

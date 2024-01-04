@@ -29,10 +29,10 @@ export default function Navbar() {
                 </g>
             </svg> 
             <div className='  bg-[#8C43FE] w-[30px] h-[30px] absolute top-6 left-[40%] rounded-full ' />
-            <button className=' bg-[#0B0D39] rounded-[43px] px-4 lg:px-10 py-1 lg:py-2 ' >
+            <a href='#' className=' bg-[#0B0D39] rounded-[43px] px-4 lg:px-10 py-1 lg:py-2 ' >
                 <p className=' text-base  text-white font-medium ' >Download App</p>
                 <p className=' text-[#FF6565] text-sm ' >Coming Soon!</p>
-            </button>
+            </a>
         </div>
     )
 } 
