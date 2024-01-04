@@ -16,6 +16,7 @@ export default function Footer() {
             <a
               href="mailto:info@hiroek.io"
               target="_blank"
+              rel="noreferrer"
               style={{ boxShadow: "0px 3px 6px #0000001A" }}
               className=" w-[40px] -rotate-45 ml-3 h-[40px] relative  flex justify-center items-center bg-[#7B53FF] rounded-full "
             >
@@ -69,7 +70,7 @@ export default function Footer() {
               </div>
             </a>
             <a
-              href={"https://www.linkedin.com/company/hiroek/"}
+              href={"https://x.com/Hiroekapp?t=FuE4Wm5L8L9T3YGu0cN-_g&s=08"}
               target="_blank"
               rel="noreferrer"
               className=" w-fit "
@@ -85,8 +86,9 @@ export default function Footer() {
             </a>
             {/* <div className=" w-[50px] h-[50px] rounded-full border border-[#CBACFC] flex justify-center items-center "></div> */}
           </div>
-          <a href="https://ciof.org.uk/" target="_blank" >
-            <img src="/assets/imgs/iof_logo.svg" className=" mt-6 " />
+          <a href="https://ciof.org.uk/"
+              rel="noreferrer" target="_blank" >
+            <img src="/assets/imgs/iof_logo.svg" alt="logo" className=" mt-6 " />
           </a>
         </div>
         <div className=" w-full flex flex-col lg:items-start items-center text-lg ">
