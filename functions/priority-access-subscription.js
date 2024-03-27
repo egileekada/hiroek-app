@@ -1,10 +1,13 @@
 import axios from 'axios';
+import { log } from 'console';
 
 exports.handler = async (event, context) => {
   const listId = process.env.LIST_ID;
   const apiKey = process.env.API_KEY;
   const body = JSON.parse(event.body);
   const { email_address } = body;
+
+  console.log("string: ", apiKey);
 
   if (!email_address) {
     return {
