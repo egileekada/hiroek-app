@@ -47,9 +47,14 @@ export default function HomePage() {
         "/.netlify/functions/priority-access-subscription",
         payload
       );
+
       alert("Contact details added successfully.");
       formik.resetForm();
+      formik.setFieldValue("firstName", "")
+      formik.setFieldValue("lastName", "")
+      formik.setFieldValue("email", "")
       setLoader(false);
+      setIsShown(false)
     } catch (error: any) {
       setLoader(false);
       if (error.response) {
