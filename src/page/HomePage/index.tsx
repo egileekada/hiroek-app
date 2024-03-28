@@ -8,6 +8,7 @@ import SecondSection from "../../components/SecondSection";
 import ThirdSection from "../../components/ThirdSection";
 import ForthSection from "../../components/ForthSection";
 import Footer from "../../components/Footer";
+import toast, { Toaster } from "react-hot-toast";
 
 interface FormValues {
   firstName: string;
@@ -47,8 +48,7 @@ export default function HomePage() {
         "/.netlify/functions/priority-access-subscription",
         payload
       );
-
-      alert("Contact details added successfully.");
+      toast.success('Contact details added successfully.'); 
       formik.resetForm();
       formik.setFieldValue("firstName", "")
       formik.setFieldValue("lastName", "")
@@ -59,10 +59,13 @@ export default function HomePage() {
       setLoader(false);
       if (error.response) {
         if (error.response.status === 400) {
-          alert(error.response.data.message)
+          toast.error(error?.response?.data?.message); 
+          // alert(error.response.data.message)
         } else {
           console.log(error.response);
-          alert(error.message);
+          // alert(error.message);
+
+          toast.error(error?.message); 
         }
       } else {
         alert("Request failed. Please check your internet connection and try again.");
@@ -250,6 +253,8 @@ export default function HomePage() {
           </Formik>
         </>
       )}
+
+<Toaster />
     </div>
   );
 }
