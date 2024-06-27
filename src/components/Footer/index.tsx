@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
         <div id="store-app" className=" w-full h-fit flex flex-col p-6 bg-white rounded-xl gap-4 items-center ">
           {/* <img src="/assets/imgs/comingsoon.png" alt="" /> */}
-          <p className=" text-xl font-semibold " >Download our app the stores</p>
+          <p className=" text-xl font-semibold " >Download our app from the stores</p>
           <div className=" w-full flex lg:flex-row flex-col gap-4 " >
             <a target="_blank" href="https://apps.apple.com/ng/app/hiroek/id6474194083" role="button" className=" w-full border flex flex-col gap-3 rounded-md p-4 " >
               <div className=" w-10 h-10 flex justify-center items-center " >
