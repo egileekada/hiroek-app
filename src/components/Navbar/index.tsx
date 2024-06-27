@@ -28,10 +28,9 @@ export default function Navbar() {
                     <text id="iroek" transform="translate(312.153 142.539)" fill="#7639f1" font-size="89" font-family="Poppins-MediumItalic, Poppins" font-weight="500" font-style="italic" letter-spacing="0.01em"><tspan x="0" y="0">iroek</tspan></text>
                 </g>
             </svg> 
-            <div className='  bg-[#8C43FE] w-[30px] h-[30px] absolute top-6 left-[40%] rounded-full ' />
-            <a href='#' className=' bg-[#0B0D39] rounded-[43px] px-4 lg:px-10 py-1 lg:py-2 ' >
-                <p className=' text-base  text-white font-medium ' >Download App</p>
-                <p className=' text-[#FF6565] text-sm ' >Coming Soon!</p>
+            <div className='  bg-[rgb(140,67,254)] w-[30px] h-[30px] lg:block hidden absolute top-6 left-[40%] rounded-full ' />
+            <a href='#store-app' className=' bg-[#0B0D39] rounded-[43px] px-4 lg:px-10 py-1 lg:py-3 ' >
+                <p className=' text-sm lg:text-base  text-white font-medium ' >Download App</p> 
             </a>
         </div>
     )

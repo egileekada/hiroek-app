@@ -5,7 +5,7 @@ export default function HeroSection(props: any) {
   return (
     <>
       <div className=" w-full mt-1 flex lg:flex-row flex-col-reverse lg:px-0 px-4 items-center ">
-        <div className=" w-full text-[#0B0D39] lg:pl-12 ">
+        <div className=" w-full flex flex-col text-[#0B0D39] lg:pl-12 ">
           <p className=" text-3xl lg:text-5xl  font-bold ">
             Stay <span className=" text-[#8C43FE] ">Connected</span>, Be{" "}
             <span className=" text-[#8C43FE] ">Inspired</span>, Be{" "}
@@ -14,12 +14,11 @@ export default function HeroSection(props: any) {
           <p className=" mt-4 ">
             Hiroek is an app that gives you the platform to create and engage with communities and other social causes. Empowering a new generation of philanthropists, supporters, and action-takers. (Uniting thinkers, carers, and doers.)
           </p>
-          <button
-            onClick={() => props.open(true)}
-            className=" w-full lg:w-auto lg:px-12 mt-4 py-3 text-white bg-[#8C43FE] font-medium rounded-[43px] rounded-bl-[12px] "
+          <a href='#store-app'
+            className=" w-fit px-12 mt-4 py-3 text-white bg-[#8C43FE] font-medium rounded-[43px] rounded-bl-[12px] "
           >
-            Get Priority Access
-          </button>
+            Get The App Now
+          </a>
         </div>
         <div className=" w-full lg:block  ">
           <Carousel />

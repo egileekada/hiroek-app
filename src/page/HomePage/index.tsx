@@ -79,9 +79,11 @@ export default function HomePage() {
         background:
           "transparent linear-gradient(356deg, #E4ECFE 0%, #FFFFFF 12%, #EAF0FE 47%, #FDFDFE 96%, #FFFFFF 100%) 0% 0% no-repeat padding-box",
       }}
-      className=" w-full "
+      className=" w-full relative "
     >
+      <div className=" w-full top-0 lg:relative sticky bg-white z-[10000] " > 
       <Navbar />
+      </div>
       <HeroSection open={setIsShown} />
       <SecondSection />
       <div className=" lg:px-12 ">

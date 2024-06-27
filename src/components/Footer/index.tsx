@@ -1,7 +1,7 @@
 import React from "react";
 import Term from "../../pdf/TAndC.pdf";
 import Policy from "../../pdf/PAndP.pdf";
-// import { FaTiktok, FaInstagram FaLinkedinIn } from "react-icons/fa";
+import { FaApple, FaGooglePlay } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -87,7 +87,7 @@ export default function Footer() {
             {/* <div className=" w-[50px] h-[50px] rounded-full border border-[#CBACFC] flex justify-center items-center "></div> */}
           </div>
           <a href="https://ciof.org.uk/"
-              rel="noreferrer" target="_blank" >
+            rel="noreferrer" target="_blank" >
             <img src="/assets/imgs/iof_logo.svg" alt="logo" className=" mt-6 " />
           </a>
         </div>
@@ -119,8 +119,23 @@ export default function Footer() {
             <p className=" text-[#0B0D39CC] ">Join Us</p>
           </div>
         </div>
-        <div className=" w-full flex justify-center ">
-          <img src="/assets/imgs/comingsoon.png" alt="" />
+        <div id="store-app" className=" w-full h-fit flex flex-col p-6 bg-white rounded-xl gap-4 items-center ">
+          {/* <img src="/assets/imgs/comingsoon.png" alt="" /> */}
+          <p className=" text-xl font-semibold " >Download our app the stores</p>
+          <div className=" w-full flex lg:flex-row flex-col gap-4 " >
+            <a target="_blank" href="https://apps.apple.com/ng/app/hiroek/id6474194083" role="button" className=" w-full border flex flex-col gap-3 rounded-md p-4 " >
+              <div className=" w-10 h-10 flex justify-center items-center " >
+                <FaApple size={"40px"} />
+              </div>
+              <p>Apple Store</p>
+            </a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" role="button" className=" w-full border flex flex-col gap-3 rounded-md p-4 " >
+              <div className=" w-10 h-10 flex justify-center items-center " >
+                <FaGooglePlay size={"30px"} />
+              </div>
+              <p>Google Play Store</p>
+            </a>
+          </div>
         </div>
       </div>
       <div className=" w-full flex relative justify-center">
