@@ -17,11 +17,11 @@ export default function ForthSection(props: any) {
           <p className=" text-3xl lg:text-5xl leading  font-bold ">
             Get <span className=" text-[#8C43FE] ">The App </span> Now!
           </p>
-          <p className=" my-4 "> Be the first to know when Hiroek goes live!</p>
+          <p className=" my-4 ">The app is now live! Discover the unique features of Hiroek.</p>
           <a href='#store-app'
             className=" w-fit mt-8 py-3 px-10 text-white bg-[#0B0D39] font-medium rounded-[43px] rounded-bl-[12px] "
           >
-            Get The App Now
+            Get access now
           </a>
         </div>
         <div className="  bg-[#8C43FE] w-[20px] h-[20px] absolute -bottom-[40%] lg:-bottom-[80%] right-[40%] rounded-full " />
