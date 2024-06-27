@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function SecondSection() {
     return (
-        <div className=' w-full px-4 lg:px-12 relative text-[#0B0D39] font-medium gap-12 flex lg:flex-row flex-col items-center py-12 ' >
-            
+        <div className=' w-full px-4 lg:px-12 relative text-[#0B0D39] font-medium gap-12 flex lg:flex-row flex-col items-center py-12 ' > 
             <div className='  bg-[#F65529] w-[26px] h-[26px] absolute top-0 lg:top-12 left-[7%] rounded-full ' />
             <div className=' w-full flex flex-col items-center  ' >
                 <div className=' lg:max-w-xl pb-6 border-b border-[#c7a5fd] ' >

@@ -5,8 +5,7 @@ export default function ForthSection(props: any) {
     <div className=" w-full flex items-center px-4 lg:flex-row relative flex-col lg:px-12 py-14 ">
       <div className="  bg-[#356DFF] w-[24px] h-[24px] absolute top-[15%] left-[5%] rounded-full " />
       <div className=" w-full flex justify-center relative ">
-        <img src="/assets/imgs/access.png" alt="" />
-
+        <img src="/assets/imgs/access.png" alt="" /> 
         <div className="  bg-[#F65529] w-[20px] h-[20px] absolute lg:bottom-[0%] left-[3%] rounded-full " />
         <div className="  bg-[#8C43FE] w-[20px] h-[20px] absolute lg:bottom-[0%] left-[60%] rounded-full " />
       </div>
