@@ -14,7 +14,7 @@ export default function ForthSection(props: any) {
         <div className="  bg-[#F65529] w-[20px] h-[20px] absolute -top-[60%] right-[10%] rounded-full " />
         <div className=" lg:max-w-lg flex flex-col ">
           <p className=" text-3xl lg:text-5xl leading  font-bold ">
-            Get <span className=" text-[#8C43FE] ">The App </span> Now!
+            <span className=" text-[#8C43FE] ">Download </span> Now!
           </p>
           <p className=" my-4 ">The app is now live! Discover the unique features of Hiroek.</p>
           <a href='#store-app'
